@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+	<style>
+	*{margin:0px;padding:0px;}
+	a{text-decoration:none;}
+	li{list-style:none;}
+	img{border:none;}
+	body{background:url(images/body_02.gif) repeat-x;}
+	.header
+		{
+		  width:920px;height:102px;
+		  margin:0 auto;background:url(images/header_02.gif);
+		}
+	.header-l
+		{
+		  width:230px;height:102px;
+		  float:left;
+		}
+	.header-r
+		{
+		  width:230px;height:102px;
+		  float:right;color:#fff;
+		  font-size:12px;text-align:right;
+		}
+	.header-r a
+		{
+		  color:#fff;margin:0px 8px;
+		  line-height:82px;
+		}
+	.header-r a:hover
+		{
+		  color:red;
+		}
+	.homepage
+		{
+		  width:882px;height:34px;
+		  margin:0 auto;background:url(images/homepage_03.gif);
+		  border-radius:5px;padding-left:38px;font-size:14px;
+		}
+	.homepage a
+		{
+		  width:80px;height:34px;
+		  float:left;text-align:center;
+		  font-size:14px;line-height:34px;color:#fff;
+		  background:url(images/homepage_03_bg.png) no-repeat right;
+		  position:relative;
+		}
+	.homepage a:hover
+		{
+		  background:url(images/homepage_01.gif); color:red;
+		}
+	.homepage .homepage-1
+		{
+		  background:url(images/homepage_01.gif);
+		}
+	.homepage a .new
+		{
+		  width:28px;height:18px;
+		  position:absolute; left:26px; top:-18px;
+		}
+	.box
+		{
+		  width:900px;height:208px;margin:0 auto;
+		  background:url(images/box_03.gif);
+		  padding:22px 0 0 20px;
+		}
+	.box-l
+		{
+		  width:248px;height:204px;
+		  float:left;
+		}
+	.box-m
+		{
+		  width:400px;height:204px;
+		  float:left;
+		  /* background:red; */padding:0 20px;
+		}
+	.box-m-1
+	  {
+	    width:397px;height:22px;
+		border-bottom:1px solid #939292;
+		padding-left:3px;
+	  }
+	.box-m-1 li
+	  {
+	    float:left;margin-left:4px;
+		height:22px;background:url(images/box_03_bg.png) no-repeat;
+		padding-left:12px;line-height:22px;font-size:12px;
+		position:relative;left:0px;top:0px;
+	  }
+	.box-m-1 li a
+	  {
+	    display:block;height:22px;
+		background:url(images/box_04_bg.png) no-repeat right 0px;
+		padding-right:12px;color:#fff;/* position:relative;left:0px;top:0px; */
+	  }
+	.box-m-1 li.a
+	  {
+	   background:url(images/box_03.png) no-repeat; position:relative;left:0px;top:1px;
+	  }
+	.box-m-1 li.a a
+	  {
+	   background:url(images/box_04.png) no-repeat right 0px;
+	   color:#89c319;font-weight:bold;
+	  }
+	.box-m-1 li:hover
+	  {
+	    background:url(images/box_03.png) no-repeat;
+        position:relative;left:0px;top:1px;
+	  }
+	.box-m-1 li:hover a
+	  {
+	   background:url(images/box_04.png) no-repeat right 0px;
+	   color:#89c319;font-weight:bold;
+	  }
+	.box-m-2 p
+	  {
+	    font-size:12px;line-height:26px;
+		background:url(images/suo_03_bg.png) no-repeat 0px 9px;
+	  }
+	.box-m-2 p a
+	  {
+	    margin-left:22px;color:#4c4c4c;
+	  }
+	.box-m-2 p span
+	  {
+	    float:right;color:#4c4c4c;
+	  }
+	.box-m-2 p.b
+	  {
+	    background:url(images/suo_03.png) no-repeat 0px 9px;
+	  }
+	.box-m-2 p.b a
+	  {
+	    color:#81bb18;
+	  }
+	.box-m-2 p:hover
+	  {
+	    background:url(images/suo_03.png) no-repeat 0px 9px;
+	  }
+	.box-m-2 p:hover a
+	  {
+	    color:#81bb18;
+	  }
+	.box-r
+		{
+		  width:152px;height:200px;
+		  float:left;background:url(images/box_03_r.gif);
+		  padding:0 24px 0 14px;font-size:12px;
+		}
+	.box-r h4
+		{
+		  font-size:12px;font-weight:normal;
+		  line-height:22px;color:#fff;
+		}
+	.box-r p
+		{
+		  line-height:22px;color:#585858;
+		}
+	.box-r form p input
+		{
+		  margin-top:6px;float:left;
+		}
+	.box-r form p span
+		{
+		  margin-left:8px;
+		}
+	.box-r .typ
+		{
+		  width:40px;height:20px;
+		  font-size:12px;color:#585858;
+		}
+	.news
+		{
+		  width:72px;height:22px;
+		  /* background:url(images/news_03.png)no-repeat left; */
+		 /*  background:url(images/news_04.png)no-repeat right; */
+		}
+	.news h1
+		{
+		  width:36px;height:23px;
+		  background:url(images/news_03.png)no-repeat;
+		  float:left;font-weight:normal;font-size:12px;
+		}
+	.news h2
+		{
+		  width:36px;height:23px;
+		  background:url(images/news_04.png)no-repeat;
+		  /* float:right; */font-weight:normal;font-size:12px;
+		}
+	.no
+	  {
+	    width:900px;height:298px;
+		padding:18px 0 0 20px;
+		margin:0px auto;
+	  }
+	.no-a
+	  {
+	    width:594px;height:296px;
+		border:1px solid #5fb0f6;
+		float:left;
+	  }
+	.no-a1
+	  {
+	    width:594px;height:28px;
+		background:url(images/suol_03.gif);
+	  }
+	.no-a1 h1
+	  {
+	    font-size:12px;color:#fff;
+	    background:url(images/szi_04.png) no-repeat 8px 8px;
+		padding-left:27px;line-height:28px;float:left;
+	  }
+	.no-a1 a
+	  {
+	    float:right;font-size:12px;
+		line-height:28px;color:#fff;
+		background:url(images/szi_03.png)no-repeat 0 9px;
+		margin-right:12px;padding-left:16px;
+	  }
+	.no-a1 a:hover
+	  {
+	    color:red;
+	  }
+	.no-a2
+	  {
+	    width:572px;height:254px;padding:12px 0 0 22px;
+	  }
+	.no-a2 li
+	  {
+	    width:124;height:130px;float:left;
+		margin-right:19px;
+	  }
+	.no-a2 li a p
+	  {
+	    text-align:center;color:#4f4f4f;
+		font-size:12px;line-height:20px;
+	  }
+	.no-a2 li a p:hover
+	  {
+	    color:red;
+	  }
+	.no-b
+	  {
+	    width:265px;height:296px;
+	    float:right;border:1px solid #5fb0f6;
+	  }
+	.no-b1
+	  {
+	    width:265px;height:28px;
+		background:url(images/suol_03.gif);
+	  }
+	.no-b1 h1
+	  {
+	    font-size:12px;color:#fff;
+	    background:url(images/szi_04.png) no-repeat 8px 8px;
+		padding-left:27px;line-height:28px;float:left;
+	  }
+	.no-b1 a
+	  {
+	    float:right;font-size:12px;
+		line-height:28px;color:#fff;
+		background:url(images/szi_03.png)no-repeat 0 9px;
+		margin-right:12px;padding-left:16px;
+	  }
+	.no-b1 a:hover
+	  {
+	    color:red;
+	  }
+	</style>
+ </head>
+ <body>
+    <div class="header">
+		<div class="header-l">
+			<a href="#"><img src="images/logo_02.png"/></a>
+		</div>
+		<div class="header-r">
+			<a href="#">中文版</a>|
+			<a href="#">英文版</a>|
+			<a href="#">联系我们</a>
+		</div>
+	</div>
+	<div class="homepage">
+		<a class="homepage-1" href="#">首  页</a>
+		<a href="#">公司新闻</a>
+		<a href="#">行业动态</a>
+		<a href="#">企业理念</a>
+		<a href="#">售后服务
+			<div class="new">
+			  <img src="images/new-1.gif"/>
+			</div>
+		</a>
+		<a href="#">网站地图</a>
+		<a href="#">联系我们</a>
+	</div>
+	<div class="box">
+		<div class="box-l">
+		  <img src="images/box_03_bg.gif"/>
+		</div>
+		<div class="box-m">
+		    <div class="box-m-1">
+		      <ul>
+			   <li class="a"><a href="#">行业新闻</a></li>
+			   <li><a href="#">公司大事件</a></li>
+			   <li><a href="#">活动</a></li>
+			  </ul>
+			</div>
+		    <div class="box-m-2">
+			  <p class="b"><a href="#">从支付宝到“信用宝”？支付宝的进化野心</a><span>2013-06-24</span></p>
+			  <p><a href="#">雷军：如果我都是机会主义者</a><span>2013-06-24</span></p>
+			  <p><a href="#">斯皮尔伯格：娱乐业将巨变 电影或转向点播视频</a><span>2013-06-24</span></p>
+			  <p><a href="#">寂寞迅雷：拥有4亿用户为何未成下个腾讯</a><span>2013-06-24</span></p>
+			  <p><a href="#">国内音乐网站纷纷转型</a><span>2013-06-24</span></p>
+			  <p><a href="#">众人评：企业级移动应用“未来已来”</a><span>2013-06-24</span></p>
+			  <p><a href="#">谷歌地球推出时间风景旅行功能:看地表28年变迁</a><span>2013-06-24</span></p>
+		  </div>
+		</div>
+		<div class="box-r">
+		  <h4>在线调查</h4>
+		  <p>你是通过什么途径访问到本公司网站的？</p>
+		  <form>
+		    <p><label><input type="radio" name="a"/><span>网站搜索</span></label></p>
+			<p><label><input type="radio" name="a"/><span>朋友介绍</span></label></p>
+			<p><label><input type="radio" name="a"/><span>友情链接</span></label></p>
+			<p><label><input type="radio" name="a"/><span>其他途径</span></label></p>
+			<p><input class="typ" type="button" value="提交"/></p>
+		  </form>
+		</div>
+	</div>
+	<div class="no">
+	  <div class="no-a">
+		<div class="no-a1">
+		  <h1>热门产品</h1>
+		  <a href="#">更多</a>
+		</div>
+		<div class="no-a2">
+		  <ul>
+		    <li><a href="#"><img src="images/no_04.gif"/><p>产品图片</p></a></li>
+			<li><a href="#"><img src="images/no_04.gif"/><p>产品图片</p></a></li>
+			<li><a href="#"><img src="images/no_04.gif"/><p>产品图片</p></a></li>
+			<li><a href="#"><img src="images/no_04.gif"/><p>产品图片</p></a></li>
+			<li><a href="#"><img src="images/no_04.gif"/><p>产品图片</p></a></li>
+			<li><a href="#"><img src="images/no_04.gif"/><p>产品图片</p></a></li>
+			<li><a href="#"><img src="images/no_04.gif"/><p>产品图片</p></a></li>
+			<li><a href="#"><img src="images/no_04.gif"/><p>产品图片</p></a></li>
+		  </ul>
+		</div>
+	  </div>
+	  <div class="no-b">
+	    <div class="no-b1">
+		  <h1>行业动态</h1>
+		  <a href="#">更多</a>
+		</div>
+		<div class="no-b2">
+		  <img src="images/"
+		</div>
+		<div class="no-b3">
+		</div>
+	  </div>
+	</div>
+ </body>
+</html>
